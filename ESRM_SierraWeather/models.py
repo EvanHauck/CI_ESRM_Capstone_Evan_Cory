@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Record(models.Model):
-    recordNum = models.BigAutoField(primary_key=True)
+    recordNum = models.IntegerField(primary_key=True)
     recordDate = models.DateTimeField()
     battAvg = models.DecimalField(max_digits=4,decimal_places=2)
     pTempCAvg = models.DecimalField(max_digits=4,decimal_places=2)
